@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <array name="preloaded_fonts" translatable="false">
-        <item>@font/grenze_gotisch_extralight</item>
-        <item>@font/waiting_for_the_sunrise</item>
-    </array>
-</resources>
