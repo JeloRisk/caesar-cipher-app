@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Alohomora</string>
+    <!--    <string name="app_name">PandaLogin</string>-->
+    <string name="guess_hint">Enter your guess</string>
+    <string name="submit_button_text">Submit</string>
+    <string name="time_up_message">Times up! Try again.</string>
+    <string name="timer_format">%d seconds</string>
+    <string name="correct_guess_message">Congratulations, you guessed correctly!</string>
+    <string name="incorrect_guess_message">Sorry, try again.</string>
+
+    <string name="encrypt">Encrypt</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="message_hint">Enter message here</string>
+    <string name="shift_hint">Enter shift here</string>
+    <string name="submit">Submit</string>
+
+        <string-array name="my_strings">
+            <item>Accio</item>
+            <item>Alohomora</item>
+            <item>Avada Kedavra</item>
+            <item>Crucio</item>
+            <item>Expecto Patronum</item>
+            <item>Expelliarmus</item>
+            <item>Imperio</item>
+            <item>Lumos</item>
+            <item>Nox</item>
+            <item>Obliviate</item>
+            <item>Wingardium Leviosa</item>
+        </string-array>
+
+</resources>
