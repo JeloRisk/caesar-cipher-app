@@ -1,0 +1,188 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.alohomora"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml
+10    <!-- internet -->
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:6:22-77
+13
+14    <permission
+14-->[androidx.core:core:1.9.0] C:\Users\Acer\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.example.alohomora.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.9.0] C:\Users\Acer\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.9.0] C:\Users\Acer\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.example.alohomora.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.9.0] C:\Users\Acer\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.9.0] C:\Users\Acer\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:7:5-79:19
+21        android:allowBackup="true"
+21-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:8:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.9.0] C:\Users\Acer\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+23        android:dataExtractionRules="@xml/data_extraction_rules"
+23-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:9:9-65
+24        android:debuggable="true"
+25        android:fullBackupContent="@xml/backup_rules"
+25-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:10:9-54
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:11:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:12:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:13:9-54
+29        android:supportsRtl="true"
+29-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:14:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.Guessgame" >
+31-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:15:9-47
+32        <activity
+32-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:17:9-23:20
+33            android:name="com.example.alohomora.MultipleChoiceActivity"
+33-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:18:13-72
+34            android:exported="false" >
+34-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:19:13-37
+35            <meta-data
+35-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:20:13-22:36
+36                android:name="android.app.lib_name"
+36-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:21:17-52
+37                android:value="" />
+37-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:22:17-33
+38        </activity>
+39        <activity
+39-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:24:9-30:20
+40            android:name="com.example.alohomora.Game"
+40-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:25:13-54
+41            android:exported="false" >
+41-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:26:13-37
+42            <meta-data
+42-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:20:13-22:36
+43                android:name="android.app.lib_name"
+43-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:21:17-52
+44                android:value="" />
+44-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:22:17-33
+45        </activity>
+46        <activity
+46-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:31:9-37:20
+47            android:name="com.example.alohomora.Betgame"
+47-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:32:13-57
+48            android:exported="false" >
+48-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:33:13-37
+49            <meta-data
+49-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:20:13-22:36
+50                android:name="android.app.lib_name"
+50-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:21:17-52
+51                android:value="" />
+51-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:22:17-33
+52        </activity>
+53
+54        <meta-data
+54-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:39:9-41:57
+55            android:name="preloaded_fonts"
+55-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:40:13-43
+56            android:resource="@array/preloaded_fonts" /> <!-- android:theme="@style/Theme.Guessgame" -->
+56-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:41:13-54
+57        <!-- android:theme="@style/Theme.Material3.Light.NoActionBar" -->
+58        <activity
+58-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:43:9-58:20
+59            android:name="com.example.alohomora.MainActivity"
+59-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:44:13-62
+60            android:exported="true"
+60-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:45:13-36
+61            android:taskAffinity="com.example.myapp.first" >
+61-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:46:13-59
+62            <intent-filter>
+62-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:48:14-53:30
+63                <action android:name="android.intent.action.MAIN" />
+63-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:49:14-66
+63-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:49:22-63
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:52:14-74
+65-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:52:24-71
+66            </intent-filter>
+67
+68            <meta-data
+68-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:20:13-22:36
+69                android:name="android.app.lib_name"
+69-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:21:17-52
+70                android:value="" />
+70-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:22:17-33
+71        </activity>
+72        <activity
+72-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:59:9-69:20
+73            android:name="com.example.alohomora.GuessingGame"
+73-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:60:13-62
+74            android:exported="true"
+74-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:61:13-36
+75            android:taskAffinity="com.example.myapp.second"
+75-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:63:13-60
+76            android:windowSoftInputMode="adjustResize" >
+76-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:62:13-55
+77            <intent-filter>
+77-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:64:13-68:29
+78                <action android:name="android.intent.action.GUESSING_GAME" />
+78-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:65:17-78
+78-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:65:25-75
+79
+80                <category android:name="android.intent.category.DEFAULT" />
+80-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:67:17-76
+80-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:67:27-73
+81            </intent-filter>
+82        </activity>
+83        <activity
+83-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:70:9-78:20
+84            android:name="com.example.alohomora.Result"
+84-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:71:13-56
+85            android:exported="true" >
+85-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:72:13-36
+86            <intent-filter>
+86-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:73:13-77:29
+87                <action android:name="android.intent.action.RESULT" />
+87-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:74:17-71
+87-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:74:25-68
+88
+89                <category android:name="android.intent.category.DEFAULT" />
+89-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:67:17-76
+89-->C:\Users\Acer\AndroidStudioProjects\alohomora\app\src\main\AndroidManifest.xml:67:27-73
+90            </intent-filter>
+91        </activity>
+92
+93        <provider
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Acer\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+94            android:name="androidx.startup.InitializationProvider"
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Acer\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+95            android:authorities="com.example.alohomora.androidx-startup"
+95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Acer\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+96            android:exported="false" >
+96-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Acer\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+97            <meta-data
+97-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Acer\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+98                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+98-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Acer\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+99                android:value="androidx.startup" />
+99-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Acer\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+100            <meta-data
+100-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Acer\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+101                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+101-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Acer\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+102                android:value="androidx.startup" />
+102-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Acer\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+103        </provider>
+104    </application>
+105
+106</manifest>

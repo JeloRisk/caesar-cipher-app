@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.alohomora.app-merged_res-29:/layout_guess.xml.flat",
+        "source": "com.example.alohomora.app-main-31:/layout/guess.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\layout_activity_game.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\layout\\activity_game.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\drawable_overlay.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\drawable\\overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\drawable_a.png.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\drawable\\a.png"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\font_just_me_again_down_here.ttf.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\font\\just_me_again_down_here.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\layout_activity_multiple_choice.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\layout\\activity_multiple_choice.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\layout_activity_main11.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\layout\\activity_main11.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\layout_activity_betgame.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\layout\\activity_betgame.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\font_imprint_mt_shadow.ttf.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\font\\imprint_mt_shadow.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\layout_guess.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\layout\\guess.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-pngs-24:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\layout_result.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\layout\\result.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\font_grenze_gotisch_extralight.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\font\\grenze_gotisch_extralight.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\drawable_shape_border_and_background_login.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\drawable\\shape_border_and_background_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\font_waiting_for_the_sunrise.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\font\\waiting_for_the_sunrise.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\layout_activity_join_game.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\layout\\activity_join_game.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-merged_res-29:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Acer\\.gradle\\daemon\\7.4\\com.example.alohomora.app-main-31:\\layout\\activity_register.xml"
+    }
+]
