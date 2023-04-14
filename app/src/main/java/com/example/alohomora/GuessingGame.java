@@ -80,7 +80,7 @@ public class GuessingGame extends AppCompatActivity {
                 Uri uri = resultData.getData();
                 try {
                     String content = readTextFromUri(uri);
-                    resultTextView.setText(content);
+                    messageEditText.setText(content);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

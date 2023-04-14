@@ -140,7 +140,7 @@
                     android:layout_marginTop="23dp"
                     android:background="@drawable/shape_border_and_background_login"
                     android:fontFamily="@font/imprint_mt_shadow"
-                    android:inputType="text"
+                    android:inputType="textMultiLine"
                     android:padding="10dp"
 
                     android:shape="rectangle"
