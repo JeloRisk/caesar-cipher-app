@@ -23,201 +23,222 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#E310141B" />
-
-    <LinearLayout
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_centerInParent="true"
-        android:gravity="center_vertical|center_horizontal"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/instruction_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="50dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/imprint_mt_shadow"
-            android:justificationMode="inter_word"
-            android:lineSpacingExtra="-3sp"
-
-            android:text="Enter the Forbidden Forest! Can you use the wisdom of the Caesar Cipher to uncover the hidden knowledge and conquer the darkness?"
-            android:textAlignment="textStart"
-            android:textColor="@color/white"
-
-            android:textSize="24sp" />
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
             android:gravity="center_vertical|center_horizontal"
-            android:orientation="vertical"
-            android:paddingVertical="20dp">
-
-
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-
-                android:layout_marginHorizontal="50dp"
-
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/message_text_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-
-                    android:fontFamily="@font/imprint_mt_shadow"
-                    android:lineSpacingExtra="-3sp"
-
-
-                    android:text="Message"
-                    android:textAlignment="textStart"
-                    android:textColor="@color/white"
-
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/random_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:clickable="true"
-                    android:fontFamily="@font/imprint_mt_shadow"
-                    android:lineSpacingExtra="-3sp"
-                    android:paddingLeft="20dp"
-
-
-                    android:textAlignment="textStart"
-                    android:textColor="@color/primary"
-
-                    android:textSize="24sp" />
-                <!--                <Button-->
-                <!--                    android:fontFamily="@font/imprint_mt_shadow"-->
-                <!--                    android:id="@+id/button"-->
-                <!--                    android:layout_width="wrap_content"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:background="@android:nu"-->
-                <!--                    android:text="Button" />-->
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/message_edit_text"
-                android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_below="@id/instruction_text_view"
-                android:layout_centerHorizontal="true"
-                android:layout_marginHorizontal="50dp"
-                android:layout_marginTop="23dp"
-                android:background="@drawable/shape_border_and_background_login"
-                android:fontFamily="@font/imprint_mt_shadow"
-                android:inputType="text"
-                android:padding="10dp"
-
-                android:shape="rectangle"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/message_text_view"
-                android:layout_width="300dp"
+                android:id="@+id/instruction_text_view"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
+                android:layout_margin="50dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/imprint_mt_shadow"
+                android:justificationMode="inter_word"
                 android:lineSpacingExtra="-3sp"
 
-
-                android:text="Shift"
+                android:text="Enter the Forbidden Forest! Can you use the wisdom of the Caesar Cipher to uncover the hidden knowledge and conquer the darkness?"
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
 
-                android:textSize="24sp"
-                tools:ignore="DuplicateIds" />
-
-            <EditText
-                android:id="@+id/shift_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/instruction_text_view"
-                android:layout_centerHorizontal="true"
-                android:layout_marginHorizontal="50dp"
-                android:layout_marginTop="23dp"
-                android:background="@drawable/shape_border_and_background_login"
-                android:fontFamily="@font/imprint_mt_shadow"
-                android:inputType="number"
-                android:padding="10dp"
-
-                android:shape="rectangle"
-                android:textColor="@color/white"
                 android:textSize="24sp" />
 
-            <RadioGroup
-                android:id="@+id/radio_group"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:paddingVertical="20dp">
 
-                android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/encrypt_radio_button"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginHorizontal="50dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/message_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+
+                        android:fontFamily="@font/imprint_mt_shadow"
+                        android:lineSpacingExtra="-3sp"
+
+
+                        android:text="Message"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/random_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:fontFamily="@font/imprint_mt_shadow"
+                        android:lineSpacingExtra="-3sp"
+                        android:paddingLeft="20dp"
+
+
+                        android:textAlignment="textStart"
+                        android:textColor="@color/primary"
+
+                        android:textSize="24sp" />
+                    <!--                <Button-->
+                    <!--                    android:fontFamily="@font/imprint_mt_shadow"-->
+                    <!--                    android:id="@+id/button"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:background="@android:nu"-->
+                    <!--                    android:text="Button" />-->
+                </LinearLayout>
+
+                <Button
+
+                    android:id="@+id/select_file_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="48dp"
+                    android:backgroundTint="@color/secondaryColor"
                     android:fontFamily="@font/imprint_mt_shadow"
-                    android:text="@string/encrypt"
+                    android:text="READ"
+
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/message_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/instruction_text_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/shape_border_and_background_login"
+                    android:fontFamily="@font/imprint_mt_shadow"
+                    android:inputType="text"
+                    android:padding="10dp"
+
+                    android:shape="rectangle"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
 
-                <RadioButton
-                    android:id="@+id/decrypt_radio_button"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/message_text_view"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/imprint_mt_shadow"
-                    android:text="@string/decrypt"
+                    android:lineSpacingExtra="-3sp"
+
+
+                    android:text="Shift"
+                    android:textAlignment="textStart"
                     android:textColor="@color/white"
 
+                    android:textSize="24sp"
+                    tools:ignore="DuplicateIds" />
+
+                <EditText
+                    android:id="@+id/shift_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instruction_text_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/shape_border_and_background_login"
+                    android:fontFamily="@font/imprint_mt_shadow"
+                    android:inputType="number"
+                    android:padding="10dp"
+
+                    android:shape="rectangle"
+                    android:textColor="@color/white"
                     android:textSize="24sp" />
 
-            </RadioGroup>
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/encrypt_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:fontFamily="@font/imprint_mt_shadow"
+                        android:text="@string/encrypt"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/decrypt_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/imprint_mt_shadow"
+                        android:text="@string/decrypt"
+                        android:textColor="@color/white"
+
+                        android:textSize="24sp" />
+
+                </RadioGroup>
 
 
-            <TextView
-                android:id="@+id/result_text_view"
-                   android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/result_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+
+            <Button
+
+                android:id="@+id/convert_button"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:padding="16dp" />
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="48dp"
+                android:backgroundTint="@color/secondaryColor"
+                android:fontFamily="@font/imprint_mt_shadow"
+                android:text="@string/submit"
+
+                android:textSize="16sp" />
+
+
         </LinearLayout>
 
-        <Button
-
-            android:id="@+id/convert_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginHorizontal="50dp"
-            android:layout_marginTop="48dp"
-            android:backgroundTint="@color/secondaryColor"
-            android:fontFamily="@font/imprint_mt_shadow"
-            android:text="@string/submit"
-
-            android:textSize="16sp" />
-
-
-
-    </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
