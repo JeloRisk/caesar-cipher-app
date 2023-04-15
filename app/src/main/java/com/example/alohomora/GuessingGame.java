@@ -46,7 +46,19 @@ public class GuessingGame extends AppCompatActivity {
                 int selectedId = radioGroup.getCheckedRadioButtonId();
                 RadioButton selectedRadioButton = findViewById(selectedId);
                 String message = messageEditText.getText().toString();
-                int shift = Integer.parseInt(shiftEditText.getText().toString());
+                String shiftStr = shiftEditText.getText().toString();
+
+                // Check if the message and shift inputs are not empty
+                if (message.trim().isEmpty()) {
+                    resultTextView.setText("Please enter a message");
+                    return;
+                }
+                if (shiftStr.trim().isEmpty()) {
+                    resultTextView.setText("Please enter a shift");
+                    return;
+                }
+
+                int shift = Integer.parseInt(shiftStr);
                 String result;
                 if(selectedRadioButton.getText().toString().equals("Encrypt")) {
                     result = encrypt(message, shift);

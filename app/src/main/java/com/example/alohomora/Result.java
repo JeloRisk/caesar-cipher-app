@@ -1,38 +1,100 @@
 package com.example.alohomora;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.OpenableColumns;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
-
+import android.widget.EditText;
+import android.widget.TextView;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class Result extends AppCompatActivity {
-    private Button button;
-//    private Toolbar toolbar;
+
+    private static final int READ_REQUEST_CODE = 42;
+
+    private Button mSelectFileButton;
+    private TextView mFileNameTextView;
+    private EditText mFileContentEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.result);
-//        getSupportActionBar().hide();
-//        Toolbar toolbar = findViewById(R.id.toolbar); // inflate your custom Toolbar
-//        setSupportActionBar(toolbar); // set it as the action bar for the activity
-        getSupportActionBar().hide();
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        mSelectFileButton = findViewById(R.id.select_file_button);
+        mFileNameTextView = findViewById(R.id.file_name_text_view);
+        mFileContentEditText = findViewById(R.id.file_content_edit_text);
+
+        mSelectFileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToNextPage();
+                performFileSearch();
             }
         });
     }
-    public void goToNextPage() {
-        Intent intent = new Intent(this, GuessingGame.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
+
+    private void performFileSearch() {
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("*/*");
+        startActivityForResult(intent, READ_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == READ_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
+            Uri uri = data.getData();
+            String fileName = getFileName(uri);
+            mFileNameTextView.setText(fileName);
+
+            try {
+                String fileContent = readFileContent(uri);
+                mFileContentEditText.setText(fileContent);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private String getFileName(Uri uri) {
+        String result = null;
+        if (uri.getScheme().equals("content")) {
+            try (Cursor cursor = getContentResolver().query(uri, null, null, null, null)) {
+                if (cursor != null && cursor.moveToFirst()) {
+                    result = cursor.getString(((Cursor) cursor).getColumnIndex(OpenableColumns.DISPLAY_NAME));
+                }
+            }
+        }
+        if (result == null) {
+            result = uri.getPath();
+            int cut = result.lastIndexOf('/');
+            if (cut != -1) {
+                result = result.substring(cut + 1);
+            }
+        }
+        return result;
+    }
+
+    private String readFileContent(Uri uri) throws IOException {
+        InputStream inputStream = getContentResolver().openInputStream(uri);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+        StringBuilder stringBuilder = new StringBuilder();
+        String line;
+        while ((line = reader.readLine()) != null) {
+            stringBuilder.append(line);
+            stringBuilder.append("\n");
+        }
+        inputStream.close();
+        return stringBuilder.toString();
     }
 }

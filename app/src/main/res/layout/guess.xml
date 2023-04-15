@@ -17,13 +17,14 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/a"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/b"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#E310141B" />
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -32,6 +33,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_centerInParent="true"
+
             android:gravity="center_vertical|center_horizontal"
             android:orientation="vertical">
 
@@ -41,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="50dp"
-                android:layout_marginTop="10dp"
+
                 android:fontFamily="@font/imprint_mt_shadow"
                 android:justificationMode="inter_word"
                 android:lineSpacingExtra="-3sp"
@@ -51,6 +53,7 @@
                 android:textColor="@color/white"
 
                 android:textSize="24sp" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -90,28 +93,6 @@
 
                         android:textSize="24sp" />
 
-                    <TextView
-                        android:id="@+id/random_button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:clickable="true"
-                        android:fontFamily="@font/imprint_mt_shadow"
-                        android:lineSpacingExtra="-3sp"
-                        android:paddingLeft="20dp"
-
-
-                        android:textAlignment="textStart"
-                        android:textColor="@color/primary"
-
-                        android:textSize="24sp" />
-                    <!--                <Button-->
-                    <!--                    android:fontFamily="@font/imprint_mt_shadow"-->
-                    <!--                    android:id="@+id/button"-->
-                    <!--                    android:layout_width="wrap_content"-->
-                    <!--                    android:layout_height="wrap_content"-->
-                    <!--                    android:background="@android:nu"-->
-                    <!--                    android:text="Button" />-->
                 </LinearLayout>
 
                 <Button
@@ -133,16 +114,20 @@
                 <EditText
                     android:id="@+id/message_edit_text"
                     android:layout_width="fill_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="376dp"
+
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="false"
+                    android:gravity="start"
                     android:layout_below="@id/instruction_text_view"
-                    android:layout_centerHorizontal="true"
+                    android:textAlignment="textStart"
                     android:layout_marginHorizontal="50dp"
                     android:layout_marginTop="23dp"
                     android:background="@drawable/shape_border_and_background_login"
                     android:fontFamily="@font/imprint_mt_shadow"
                     android:inputType="textMultiLine"
                     android:padding="10dp"
-
+                    android:text="Shift"
                     android:shape="rectangle"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
@@ -211,34 +196,70 @@
 
                 </RadioGroup>
 
-
-                <TextView
-                    android:id="@+id/result_text_view"
+                <Button
+                    android:id="@+id/convert_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:padding="16dp" />
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_centerVertical="true"
+                    android:layout_margin="50dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="48dp"
+                    android:backgroundTint="@color/secondaryColor"
+                    android:fontFamily="@font/imprint_mt_shadow"
+                    android:text="@string/submit"
+
+                    android:textSize="16sp" />
+
             </LinearLayout>
+        <LinearLayout
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
 
+            android:layout_margin="50dp"
 
-            <Button
+            android:orientation="vertical">
 
-                android:id="@+id/convert_button"
+            <TextView
+                android:id="@+id/result_text_view"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
                 android:layout_centerHorizontal="true"
+                android:fontFamily="@font/imprint_mt_shadow"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="-3sp"
+
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+
+                android:textSize="24sp"/>
+
+            <Button
+
+                android:id="@+id/copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_baseline_content_copy_24"
+                android:drawableTint="@color/white"
+                android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:layout_marginHorizontal="50dp"
-                android:layout_marginTop="48dp"
+
                 android:backgroundTint="@color/secondaryColor"
                 android:fontFamily="@font/imprint_mt_shadow"
-                android:text="@string/submit"
+                android:text="copy"
 
                 android:textSize="16sp" />
 
 
-        </LinearLayout>
+
+        </LinearLayout>        </LinearLayout>
 
     </ScrollView>
 </RelativeLayout>
