@@ -32,25 +32,35 @@ public class CaesarCipher extends AppCompatActivity {
     private TextView mTextView;
 
     @Override
+// Called when the activity is first created
     protected void onCreate(Bundle savedInstanceState) {
+        // Call the superclass constructor and set the layout for the activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.guess);
+
+        // Get the string array from resources and find views by ID
         myStrings = getResources().getStringArray(R.array.my_strings);
         messageEditText = findViewById(R.id.message_edit_text);
         shiftEditText = findViewById(R.id.shift_edit_text);
         resultTextView = findViewById(R.id.result_text_view);
         radioGroup = findViewById(R.id.radio_group);
         resultLayout = findViewById(R.id.result);
-        TextView resultTextView = findViewById(R.id.result_text_view);
 
+        // Hide the result layout if the result text view is empty
+        TextView resultTextView = findViewById(R.id.result_text_view);
         if (resultTextView.getText().toString().isEmpty()) {
             resultLayout.setVisibility(View.GONE);
         }
+
+        // Set up button listeners
         Button button = findViewById(R.id.select_file_button);
         Button convertButton = findViewById(R.id.convert_button);
+
+        // Set up listener for the convert button
         convertButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Get the selected radio button and input values
                 int selectedId = radioGroup.getCheckedRadioButtonId();
                 RadioButton selectedRadioButton = findViewById(selectedId);
                 String message = messageEditText.getText().toString();
@@ -66,6 +76,7 @@ public class CaesarCipher extends AppCompatActivity {
                     return;
                 }
 
+                // Convert shift string to integer and encrypt or decrypt the message
                 int shift = Integer.parseInt(shiftStr);
                 String result;
                 if (selectedRadioButton.getText().toString().equals("Encrypt")) {
@@ -74,21 +85,26 @@ public class CaesarCipher extends AppCompatActivity {
                     result = decrypt(message, shift);
                 }
 
+                // Show the result layout and display the result text
                 resultLayout.setVisibility(View.VISIBLE);
-
-
                 resultTextView.setText(result);
             }
         });
+
+        // Set up listener for the select file button
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                performFileSearch();
+                locateFile();
             }
         });
+
+
+
     }
 
-    private void performFileSearch() {
+
+    private void locateFile() {
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType("text/plain");
@@ -125,22 +141,9 @@ public class CaesarCipher extends AppCompatActivity {
         inputStream.close();
         return stringBuilder.toString();
     }
+
     String alphabet = "abcdefghijklmnopqrstuvwxyz0123456789";
 
-    // Encrypts the given message using Caesar cipher and the given shift
-//    private String encrypt(String message, int shift) {
-//        StringBuilder result = new StringBuilder();
-//        for (char c : message.toCharArray()) {
-//            if (Character.isUpperCase(c)) {
-//                result.append((char) ((c + shift - 65) % 26 + 65));
-//            } else if (Character.isLowerCase(c)) {
-//                result.append((char) ((c + shift - 97) % 26 + 97));
-//            } else {
-//                result.append(c);
-//            }
-//        }
-//        return result.toString();
-//    }
 
 
     /**
@@ -151,7 +154,6 @@ public class CaesarCipher extends AppCompatActivity {
      * @return the encrypted message
      */
     private String encrypt(String message, int shift) {
-
         // Convert message to lowercase
         message = message.toLowerCase();
 
@@ -160,8 +162,11 @@ public class CaesarCipher extends AppCompatActivity {
 
         // Iterate over each character in the message
         for (char c : message.toCharArray()) {
-            // Check if the character is a lowercase letter or a digit
-            if (Character.isLowerCase(c) || Character.isDigit(c)) {
+            // Check if the character is a space, newline, symbol, lowercase letter, or digit
+            if (alphabet.indexOf(c) == -1) {
+                // Append the character to the result without encrypting it
+                result.append(c);
+            } else {
                 // Get the index of the character in the alphabet
                 int index = alphabet.indexOf(c);
 
@@ -190,21 +195,37 @@ public class CaesarCipher extends AppCompatActivity {
      * @param shift   the shift used to encrypt the message
      * @return the decrypted message
      */
-    public String decrypt(String message, int shift) {
-        message = message.toLowerCase();
+    private String decrypt(String encryptedMessage, int shift) {
+        // Convert the encrypted message to lowercase
+        encryptedMessage = encryptedMessage.toLowerCase();
 
+        // Create a StringBuilder to store the decrypted message
         StringBuilder result = new StringBuilder();
-        for (char c : message.toCharArray()) {
-            if (Character.isLowerCase(c) || Character.isDigit(c)) {
+
+        // Iterate over each character in the encrypted message
+        for (char c : encryptedMessage.toCharArray()) {
+            // Check if the character is a space, newline, symbol, lowercase letter, or digit
+            if (alphabet.indexOf(c) == -1) {
+                // Append the character to the result without decrypting it
+                result.append(c);
+            } else {
+                // Get the index of the character in the alphabet
                 int index = alphabet.indexOf(c);
+
+                // If the character is in the alphabet, decrypt it
                 if (index != -1) {
+                    // Calculate the new index after shifting backwards
                     int newIndex = (index - shift + alphabet.length()) % alphabet.length();
+
+                    // Append the decrypted character to the result
                     result.append(alphabet.charAt(newIndex));
                 } else {
+                    // If the character is not in the alphabet, append it as is
                     result.append(c);
                 }
             }
         }
+
         return result.toString();
     }
 

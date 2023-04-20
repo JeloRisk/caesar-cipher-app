@@ -115,7 +115,9 @@
                     android:id="@+id/message_edit_text"
                     android:layout_width="fill_parent"
                     android:layout_height="376dp"
-
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
                     android:layout_centerHorizontal="false"
                     android:layout_centerVertical="false"
                     android:gravity="start"
@@ -127,7 +129,7 @@
                     android:fontFamily="@font/imprint_mt_shadow"
                     android:inputType="textMultiLine"
                     android:padding="10dp"
-                    android:text="Shift"
+                    android:text="@string/shift"
                     android:shape="rectangle"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
