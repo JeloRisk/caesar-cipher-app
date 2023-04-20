@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
     <!-- internet -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,64 +15,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Guessgame"
         tools:targetApi="31">
-        <activity
-            android:name="com.example.alohomora.MultipleChoiceActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="com.example.alohomora.Game"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="com.example.alohomora.Betgame"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" /> <!-- android:theme="@style/Theme.Guessgame" -->
         <!-- android:theme="@style/Theme.Material3.Light.NoActionBar" -->
         <activity
-            android:name="com.example.alohomora.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:taskAffinity="com.example.myapp.first">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN" />
-
-
-             <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.alohomora.GuessingGame"
+            android:name=".CaesarCipher"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize"
-            android:taskAffinity="com.example.myapp.second">
+            android:taskAffinity="com.example.myapp.second"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.GUESSING_GAME" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.example.alohomora.Result"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.RESULT" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

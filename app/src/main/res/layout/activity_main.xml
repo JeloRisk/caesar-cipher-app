@@ -9,7 +9,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/a"/>
+        android:src="@drawable/b"
+        android:scaleType="centerCrop" />
 
     <View
         android:layout_width="match_parent"
@@ -30,7 +31,7 @@
         android:insetTop="0dp"
         android:insetRight="0dp"
         android:insetBottom="0dp"
-        android:text="Start Playing"
+        android:text="Start"
         android:fontFamily="@font/imprint_mt_shadow"
         android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
@@ -46,29 +47,7 @@
         android:layout_centerVertical="true"
   />
 
-    <Button
-        android:id="@+id/logout"
-        app:cornerRadius="0dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logout"
-        style="?android:attr/borderlessButtonStyle"
-        android:textColor="@color/white"
-        android:backgroundTint="#03AADE"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
 
-    <TextView
-        android:id="@+id/user_details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="30dp"
-        android:gravity="center"
-        android:justificationMode="inter_word"
-        android:text="Hello"
-        android:textColor="#FFFFFF"
-        android:textColorLink="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+
+
 </RelativeLayout>

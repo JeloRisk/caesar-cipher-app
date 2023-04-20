@@ -14,18 +14,28 @@
     <string name="shift_hint">Enter shift here</string>
     <string name="submit">Submit</string>
 
-        <string-array name="my_strings">
-            <item>Accio</item>
-            <item>Alohomora</item>
-            <item>Avada Kedavra</item>
-            <item>Crucio</item>
-            <item>Expecto Patronum</item>
-            <item>Expelliarmus</item>
-            <item>Imperio</item>
-            <item>Lumos</item>
-            <item>Nox</item>
-            <item>Obliviate</item>
-            <item>Wingardium Leviosa</item>
-        </string-array>
+    <string-array name="my_strings">
+        <item>Accio</item>
+        <item>Alohomora</item>
+        <item>Avada Kedavra</item>
+        <item>Crucio</item>
+        <item>Expecto Patronum</item>
+        <item>Expelliarmus</item>
+        <item>Imperio</item>
+        <item>Lumos</item>
+        <item>Nox</item>
+        <item>Obliviate</item>
+        <item>Wingardium Leviosa</item>
+    </string-array>
+    <string name="title_activity_location_tracking">LocationTrackingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="shift">Shift</string>
 
 </resources>
